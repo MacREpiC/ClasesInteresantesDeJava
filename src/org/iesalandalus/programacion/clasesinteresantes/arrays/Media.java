@@ -1,3 +1,5 @@
+package org.iesalandalus.programacion.clasesinteresantes.arrays;
+
 import org.iesalandalus.programacion.utilidades.Entrada;
 
 public class Media {

@@ -34,7 +34,7 @@ public class Media {
             }
         }
         for(int i = 0; i < miArray.length; i++){
-            System.out.print(miArray[i] + " ");
+            System.out.println(miArray[i] + " ");
         }
         System.out.println("Cantidad de número mayores a la media: " + cMayores);
         System.out.println("Cantidad de número menores a la media: " + cMenores);

@@ -2,15 +2,16 @@ package org.iesalandalus.programacion.clasesinteresantes.arrays;
 
 import org.iesalandalus.programacion.utilidades.Entrada;
 
-public class LetraDNI {
-    private static final char[] DNI_LETRAS = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
+import javax.naming.OperationNotSupportedException;
 
+public class LetraDNI {
     public static void main(String[] args) {
+        String letrasDni = "TRWAGMYFPDXBNJZSQVHLCKE";
         int dni = 0;
-        while (dni < 1 || dni > 99999999){
+        while (dni < 1 || dni > 99999999) {
             System.out.print("Dime el número de tu DNI: ");
             dni = Entrada.entero();
         }
-        System.out.println("La letra de tu DNI es: " + DNI_LETRAS[dni % 23]);
+        System.out.printf("La letra de tu DNI es la: " + letrasDni.charAt(dni % 23));
     }
 }

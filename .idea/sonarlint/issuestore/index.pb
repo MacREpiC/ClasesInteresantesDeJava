@@ -84,3 +84,9 @@ Q.idea/sonarlint/securityhotspotstore/e/d/ed67eb178d523a4b3f117dcbe0eda5196367ce
 Nsrc/org/iesalandalus/programacion/clasesinteresantes/arrays/SujetoEstudio.java,0\4\045cd71f39c9c053c5edf660ff10b8a3b5f60ca4
 ~
 Nsrc/org/iesalandalus/programacion/clasesinteresantes/arrays/SubrayarTexto.java,8\2\821c836bdf280d3bb9b08a431c5cd5b8bcdfdea1
+ä
+Zsrc/org/iesalandalus/programacion/clasesinteresantes/expresionesregulares/ReconoceDni.java,2\9\2902a9ea117e02fbdc06c5eba51b97087279db3e
+ç
+]src/org/iesalandalus/programacion/clasesinteresantes/expresionesregulares/ValidaTelefono.java,d\1\d165d688ea049249a85ccb204138ef5113124ff7
+é
+^src/org/iesalandalus/programacion/clasesinteresantes/expresionesregulares/PrefijoTelefono.java,2\5\256729b524429855ab943f21b115dac3a1d37c88

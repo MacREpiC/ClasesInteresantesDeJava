@@ -9,15 +9,10 @@ public class ValidaTelefono {
     public static final String ER_TLF = "(\\d{9})";
 
     public static void main(String[] args) {
-        String telefono;
-        Pattern patron;
-        Matcher comparador;
-
-        patron = Pattern.compile(ER_TLF);
-        do {
-            System.out.print("Introduce un teléfono: ");
-            telefono = Entrada.cadena();
-            comparador = patron.matcher(telefono);
-        } while (!comparador.matches());
+        String tlf;
+        do{
+            System.out.print("Dime tu número de teléfono: ");
+            tlf = Entrada.cadena();
+        } while (!tlf.matches("(\\d{9})"));
     }
 }

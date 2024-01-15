@@ -5,22 +5,22 @@ import org.iesalandalus.programacion.utilidades.Entrada;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CuentaPalabras {
-    public static final String ER_PALABRAS = "([a-zA-ZáéíóúÁÉÍÓÚ]+)";
+public class CuentaVocales {
+    public static final String ER_VOCALES = "([aeiouáéíóúÁÉÍÓÚAEIOU]+)";
 
     public static void main(String[] args) {
         Pattern patron;
         Matcher comparador;
-        int palabrasReconocidas = 0;
+        int vocalesContadas = 0;
 
         System.out.print("Dame un texto: ");
         String texto = Entrada.cadena();
 
-        patron = Pattern.compile(ER_PALABRAS);
+        patron = Pattern.compile(ER_VOCALES);
         comparador = patron.matcher(texto);
         while (comparador.find()) {
-            palabrasReconocidas++;
+            vocalesContadas++;
         }
-        System.out.println("Palabras contadas: " + palabrasReconocidas);
+        System.out.println("Vocales contadas: " + vocalesContadas);
     }
 }

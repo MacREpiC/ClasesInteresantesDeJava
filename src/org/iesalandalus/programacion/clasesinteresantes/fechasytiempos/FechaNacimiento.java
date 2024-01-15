@@ -9,6 +9,7 @@ public class FechaNacimiento {
     public static void main(String[] args) {
         DateTimeFormatter formatoLargo = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         DateTimeFormatter diaSemana = DateTimeFormatter.ofPattern("cccc");
+        LocalDate hoy = LocalDate.now();
         String fechaNac;
         LocalDate fecha;
         do{
@@ -24,6 +25,8 @@ public class FechaNacimiento {
         System.out.println("Tu fecha de nacimiento es: " + fecha);
         System.out.println("El día de la semana que era tu cumpleaños era el " + fecha.format(diaSemana));
         System.out.println("Faltan " + (fecha.getDayOfYear() - LocalDate.now().getDayOfYear()) + " días hasta tu próximo cumpleaños.");
-
+        if(fecha.getDayOfYear() == LocalDate.now().getDayOfYear() && fecha.getMonthValue() == LocalDate.now().getMonthValue()){
+            System.out.println("Felicidades! Es tú cumpleaños y cumples " + (LocalDate.now().getYear() - fecha.getYear()) + " años.");
+        }
     }
 }

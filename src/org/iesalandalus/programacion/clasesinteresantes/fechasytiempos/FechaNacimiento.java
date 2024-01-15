@@ -22,11 +22,12 @@ public class FechaNacimiento {
                 fecha = null;
             }
         }while(fecha == null);
-        System.out.println("Tu fecha de nacimiento es: " + fecha);
-        System.out.println("El día de la semana que era tu cumpleaños era el " + fecha.format(diaSemana));
-        System.out.println("Faltan " + (fecha.getDayOfYear() - LocalDate.now().getDayOfYear()) + " días hasta tu próximo cumpleaños.");
+        System.out.println("Tu fecha de nacimiento es el: " + fecha.format(formatoLargo));
+        System.out.println("El día de la semana que fue tu cumpleaños era el " + fecha.format(diaSemana) + ".");
         if(fecha.getDayOfYear() == LocalDate.now().getDayOfYear() && fecha.getMonthValue() == LocalDate.now().getMonthValue()){
             System.out.println("Felicidades! Es tú cumpleaños y cumples " + (LocalDate.now().getYear() - fecha.getYear()) + " años.");
+        } else{
+            System.out.println("Faltan " + (LocalDate.now().getDayOfYear() - fecha.getDayOfYear()) + " días hasta tu próximo cumpleaños.");
         }
     }
 }
